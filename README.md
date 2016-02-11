@@ -17,7 +17,7 @@ onto the client.
 The client-side implements a single-page application architecture, communicating with the
 aforementioned API server and updating the local view appropriately. To handle selection of
 memo-sending times, we wrote a set of functions which generates a 24-hour set of 30-minute intervals
-and dynamically inserts them into a pre-existing SELECT.
+and dynamically inserts them into a pre-existing `<SELECT>`.
 
 The mailer iterates over all messages in the message database which are older than NOW() and have
 not yet been sent, sends them via mail(), and marks them as sent.
